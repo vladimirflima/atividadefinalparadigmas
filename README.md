@@ -1,77 +1,89 @@
-# Atividade 3 -  Agenda Telefônica
+# Atividade Final da turma de Paradigmas de Programação
 
-Este projeto implementa uma agenda telefônica em Python utilizando o framework Flask para fornecer uma interface web simples. A agenda permite adicionar, listar, buscar e remover contatos, com a capacidade de salvar e carregar contatos de um arquivo JSON.
+Este repositório contém várias atividades desenvolvidas em Python para a prática de paradigmas de programação. Cada atividade é um projeto independente que abrange diferentes tópicos e funcionalidades. 
 
-## Funcionalidades
+## Atividades
 
-- Adicionar contato: Permite adicionar um novo contato com nome, telefone e email.
-- Listar contatos: Exibe todos os contatos adicionados na agenda.
-- Buscar contato: Permite buscar um contato pelo nome (funcionalidade disponível no código Python, mas não na interface web).
-- Remover contato: Permite remover um contato existente da agenda.
-- Salvar agenda: Salva os contatos em um arquivo JSON (`agenda.json`) para persistência de dados.
-- Carregar agenda: Carrega os contatos de um arquivo JSON (`agenda.json`) na inicialização.
+### Atividade 1: Calculadora
 
-## Tecnologias Utilizadas
+Uma calculadora simples que realiza operações básicas como adição, subtração, multiplicação e divisão.
 
-- Python
-- Flask (framework web)
-- HTML (para a interface web)
-- JSON (para persistência de dados)
+- **Arquivo**: `atividade1.py`
+- **Funcionalidades**:
+  - Adição
+  - Subtração
+  - Multiplicação
+  - Divisão
 
-## Estrutura do Projeto
+### Atividade 2: Jogo da Forca
 
-- `app.py`: Script principal que implementa a lógica da agenda e configura o servidor Flask.
-- `templates/index.html`: Arquivo HTML que define a interface web.
+Um jogo da forca onde o jogador tenta adivinhar a palavra secreta.
 
-## Como Executar
+- **Arquivo**: `atividade2.py`
+- **Funcionalidades**:
+  - Interface de texto para jogar forca
+  - Contagem de tentativas
+  - Exibição de letras corretas e erradas
 
-### Pré-requisitos
+### Atividade 3: Agenda Telefônica
 
-- Python 3 instalado
-- Flask instalado (pode ser instalado via pip)
+Uma agenda telefônica que permite adicionar, listar, buscar e remover contatos, com a capacidade de salvar e carregar contatos de um arquivo JSON. Utiliza o framework Flask para fornecer uma interface web simples.
 
-### Passos para execução
+- **Arquivo**: `atividade3.py`
+- **Funcionalidades**:
+  - Adicionar contato
+  - Listar contatos
+  - Buscar contato
+  - Remover contato
+  - Salvar agenda em arquivo JSON
+  - Carregar agenda de arquivo JSON
+- **Como Executar**:
+  1. Instale as dependências necessárias:
+      ```sh
+      pip install Flask
+      ```
+  2. Execute o aplicativo:
+      ```sh
+      python atividade3.py
+      ```
+  3. Abra o navegador e acesse `http://127.0.0.1:5000/` para interagir com a agenda telefônica.
 
-1. Clone este repositório para sua máquina local.
-2. Navegue até o diretório do projeto.
-3. Instale as dependências necessárias:
-    ```sh
-    pip install Flask
-    ```
-4. Execute o aplicativo:
-    ```sh
-    python app.py
-    ```
-5. Abra o navegador e acesse `http://127.0.0.1:5000/` para interagir com a agenda telefônica.
+### Atividade 4: Cronômetro (Em Breve)
 
-## Arquivos
+Um cronômetro simples que permite iniciar, pausar e resetar o tempo.
 
-### `app.py`
+- **Arquivo**: `atividade4.py`
+- **Funcionalidades**:
+  - Iniciar cronômetro
+  - Pausar cronômetro
+  - Resetar cronômetro
 
-Contém a implementação das classes `Contato` e `Agenda`, e define as rotas do Flask para manipulação dos contatos. As principais funções são:
+### Atividade 5: Calculadora de IMC (Em Breve)
 
-- `adicionar_contato`: Adiciona um novo contato à agenda.
-- `listar_contatos`: Lista todos os contatos da agenda.
-- `buscar_contato`: Busca um contato pelo nome.
-- `remover_contato`: Remove um contato da agenda.
-- `salvar_em_arquivo`: Salva os contatos em um arquivo JSON.
-- `carregar_de_arquivo`: Carrega os contatos de um arquivo JSON.
+Uma calculadora que permite calcular o Índice de Massa Corporal (IMC) baseado na altura e peso do usuário.
 
-### `templates/index.html`
+- **Arquivo**: `atividade5.py`
+- **Funcionalidades**:
+  - Entrada de altura e peso
+  - Cálculo do IMC
+  - Exibição da categoria do IMC
 
-Define a interface web para interação com a agenda telefônica. Inclui um formulário para adicionar novos contatos e uma lista para exibir e remover contatos existentes.
+### Atividade 6: Lista de Tarefas (Em Breve)
 
-## Exemplos de Uso
+Uma aplicação para criar, visualizar e gerenciar uma lista de tarefas.
 
-1. **Adicionar Contato:**
-   - Preencha o formulário com o nome, telefone e email do contato.
-   - Clique em "Adicionar" para salvar o contato.
+- **Arquivo**: `atividade6.py`
+- **Funcionalidades**:
+  - Adicionar tarefa
+  - Listar tarefas
+  - Marcar tarefa como concluída
+  - Remover tarefa
 
-2. **Listar Contatos:**
-   - Todos os contatos adicionados são exibidos na lista abaixo do formulário.
+## Como Executar as Atividades
 
-3. **Remover Contato:**
-   - Clique no botão "Remover" ao lado do contato que deseja remover.
+Cada atividade pode ser executada individualmente. Para executar uma atividade específica, use o comando:
+
+python3 atividadeN.py
 
 ## Contribuições
 
