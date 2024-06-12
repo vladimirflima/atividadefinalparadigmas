@@ -58,6 +58,18 @@ Um cronômetro simples que permite iniciar, pausar e resetar o tempo.
   - Pausar cronômetro
   - Resetar cronômetro
 
+- **Como Executar**:
+  1. Certifique-se de que você tem o Python instalado.** O Tkinter geralmente vem junto com a instalação padrão do Python. Para verificar se o Tkinter está instalado, você pode abrir um terminal e executar:
+
+    ```sh
+    python -m tkinter
+    ```
+  2. Execute o aplicativo:
+      ```sh
+      python atividade4.py
+      ```
+Isso abrirá a janela do cronômetro, onde você poderá iniciar, parar e resetar o tempo.
+
 ### Atividade 5: Calculadora de IMC (Em Breve)
 
 Uma calculadora que permite calcular o Índice de Massa Corporal (IMC) baseado na altura e peso do usuário.
