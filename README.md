@@ -1,6 +1,11 @@
-# Atividade Final da turma de Paradigmas de Programação
+# Atividade Final da turma 3001 de Paradigmas de Linguagens de Programação em Python
 
-Este repositório contém várias atividades desenvolvidas em Python para a prática de paradigmas de programação. Cada atividade é um projeto independente que abrange diferentes tópicos e funcionalidades. 
+Este repositório contém várias atividades desenvolvidas em Python para a prática de paradigmas de linguagens de programação em python. Cada atividade é um projeto independente que abrange diferentes tópicos e funcionalidades.
+
+## Equipe
+
+Vladimir Magalhães Ferreira Lima - Matricula: 202308232622
+Breno da Silva cardoso - Matricula: 202308232576
 
 ## Atividades
 
@@ -97,10 +102,3 @@ Cada atividade pode ser executada individualmente. Para executar uma atividade e
 
 python3 atividadeN.py
 
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
-
-## Licença
-
-Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
