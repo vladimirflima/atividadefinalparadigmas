@@ -5,6 +5,7 @@ Este repositório contém várias atividades desenvolvidas em Python para a prá
 ## Equipe
 
 Vladimir Magalhães Ferreira Lima - Matricula: 202308232622
+
 Breno da Silva cardoso - Matricula: 202308232576
 
 ## Atividades
