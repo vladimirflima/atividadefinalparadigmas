@@ -48,7 +48,7 @@ Uma agenda telefônica que permite adicionar, listar, buscar e remover contatos,
       ```
   3. Abra o navegador e acesse `http://127.0.0.1:5000/` para interagir com a agenda telefônica.
 
-### Atividade 4: Cronômetro (Em Breve)
+### Atividade 4: Cronômetro
 
 Um cronômetro simples que permite iniciar, pausar e resetar o tempo.
 
