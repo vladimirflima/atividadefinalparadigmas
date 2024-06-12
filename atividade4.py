@@ -1,52 +1,59 @@
 import tkinter as tk
-from tkinter import ttk
 
-class Cronometro:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Cronômetro Digital")
+class Stopwatch:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Cronômetro")
 
-        self.tempo = 0
-        self.executando = False
+        self.running = False
+        self.hours = 0
+        self.minutes = 0
+        self.seconds = 0
 
-        self.label = ttk.Label(root, text=self.formatar_tempo(self.tempo), font=("Helvetica", 48))
-        self.label.pack(pady=20)
+        self.time_label = tk.Label(self.master, text="00:00:00", font=("Helvetica", 48))
+        self.time_label.pack()
 
-        self.botao_iniciar = ttk.Button(root, text="Iniciar", command=self.iniciar)
-        self.botao_iniciar.pack(side="left", padx=20)
+        self.start_button = tk.Button(self.master, text="Iniciar", command=self.start)
+        self.start_button.pack(side=tk.LEFT)
 
-        self.botao_parar = ttk.Button(root, text="Parar", command=self.parar)
-        self.botao_parar.pack(side="left", padx=20)
+        self.stop_button = tk.Button(self.master, text="Parar", command=self.stop)
+        self.stop_button.pack(side=tk.LEFT)
 
-        self.botao_resetar = ttk.Button(root, text="Resetar", command=self.resetar)
-        self.botao_resetar.pack(side="left", padx=20)
+        self.reset_button = tk.Button(self.master, text="Resetar", command=self.reset)
+        self.reset_button.pack(side=tk.LEFT)
 
-    def formatar_tempo(self, tempo):
-        minutos = int(tempo / 60)
-        segundos = int(tempo % 60)
-        return f"{minutos:02}:{segundos:02}"
+        self.update_time()
 
-    def atualizar_tempo(self):
-        if self.executando:
-            self.tempo += 1
-            self.label.config(text=self.formatar_tempo(self.tempo))
-            self.root.after(1000, self.atualizar_tempo)
+    def update_time(self):
+        if self.running:
+            self.seconds += 1
+            if self.seconds == 60:
+                self.seconds = 0
+                self.minutes += 1
+                if self.minutes == 60:
+                    self.minutes = 0
+                    self.hours += 1
 
-    def iniciar(self):
-        if not self.executando:
-            self.executando = True
-            self.atualizar_tempo()
+            self.time_label.config(text=f"{self.hours:02}:{self.minutes:02}:{self.seconds:02}")
+            self.master.after(1000, self.update_time)
 
-    def parar(self):
-        if self.executando:
-            self.executando = False
+    def start(self):
+        if not self.running:
+            self.running = True
+            self.update_time()
 
-    def resetar(self):
-        self.executando = False
-        self.tempo = 0
-        self.label.config(text=self.formatar_tempo(self.tempo))
+    def stop(self):
+        if self.running:
+            self.running = False
+
+    def reset(self):
+        self.running = False
+        self.hours = 0
+        self.minutes = 0
+        self.seconds = 0
+        self.time_label.config(text="00:00:00")
 
 if __name__ == "__main__":
     root = tk.Tk()
-    cronometro = Cronometro(root)
+    stopwatch = Stopwatch(root)
     root.mainloop()
