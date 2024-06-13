@@ -1,4 +1,4 @@
-# Atividade Final da turma 3001 de Paradigmas de Linguagens de Programação em Python
+# Atividade Final de Paradigmas de Linguagens de Programação em Python da turma 3001 
 
 Este repositório contém várias atividades desenvolvidas em Python para a prática de paradigmas de linguagens de programação em python. Cada atividade é um projeto independente que abrange diferentes tópicos e funcionalidades.
 
@@ -41,8 +41,6 @@ Uma agenda telefônica que permite adicionar, listar, buscar e remover contatos,
   - Listar contatos
   - Buscar contato
   - Remover contato
-  - Salvar agenda em arquivo JSON
-  - Carregar agenda de arquivo JSON
 - **Como Executar**:
   1. Instale as dependências necessárias:
       ```sh
@@ -76,7 +74,7 @@ Um cronômetro simples que permite iniciar, pausar e resetar o tempo.
       ```
 Isso abrirá a janela do cronômetro, onde você poderá iniciar, parar e resetar o tempo.
 
-### Atividade 5: Calculadora de IMC (Em Breve)
+### Atividade 5: Calculadora de IMC
 
 Uma calculadora que permite calcular o Índice de Massa Corporal (IMC) baseado na altura e peso do usuário.
 
@@ -86,7 +84,7 @@ Uma calculadora que permite calcular o Índice de Massa Corporal (IMC) baseado n
   - Cálculo do IMC
   - Exibição da categoria do IMC
 
-### Atividade 6: Lista de Tarefas (Em Breve)
+### Atividade 6: Lista de Tarefas
 
 Uma aplicação para criar, visualizar e gerenciar uma lista de tarefas.
 
@@ -101,5 +99,5 @@ Uma aplicação para criar, visualizar e gerenciar uma lista de tarefas.
 
 Cada atividade pode ser executada individualmente. Para executar uma atividade específica, use o comando:
 
-python3 atividadeN.py
+python `atividadeN.py`
 
